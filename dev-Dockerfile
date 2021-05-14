@@ -1,0 +1,4 @@
+FROM openjdk:14-jdk-alpine
+WORKDIR dicovery
+COPY ./target/server_discovery-0.0.1-SNAPSHOT.jar .
+CMD ["java", "-jar", "./server_discovery-0.0.1-SNAPSHOT.jar"]
